@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "2f0744f6-b0de-4c9f-9d6a-bed79f6945b9",
+		"name": "Redis shivansh",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48312872",
+		"_collection_link": "https://shivansh-kamboj-066f524f-2187349.postman.co/workspace/Shivansh-Kamboj's-Workspace~2cf59bdc-f862-4eb8-8ab7-bec69fb94986/collection/48312872-2f0744f6-b0de-4c9f-9d6a-bed79f6945b9?action=share&source=collection_link&creator=48312872"
+	},
+	"item": [
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{redis}}/getAllUsers",
+					"host": [
+						"{{redis}}"
+					],
+					"path": [
+						"getAllUsers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sahil@gmail.com\",\r\n    \"name\":\"sahil\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{redis}}/createUser",
+					"host": [
+						"{{redis}}"
+					],
+					"path": [
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user by email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"omair@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{redis}}/getUserByEmail",
+					"host": [
+						"{{redis}}"
+					],
+					"path": [
+						"getUserByEmail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user by email",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"sahil@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{redis}}/deleteUserByEmail",
+					"host": [
+						"{{redis}}"
+					],
+					"path": [
+						"deleteUserByEmail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

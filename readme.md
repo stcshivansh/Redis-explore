@@ -132,7 +132,7 @@ controllers/crudControllers.js  # Express handlers
 services/crudServices.js # Redis data access helpers
 routes/crudRoutes.js     # API route definitions
 index.js                 # App bootstrap
-postman/crudApis.json    # Postman collection (optional)
+postman/crudApis.json    # Postman collection
 ```
 
 ### Notes
